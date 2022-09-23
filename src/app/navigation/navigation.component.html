@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">
+      <img id="logo" src="../../assets/connect-logo.png" alt="connect-logo" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="home"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">Circles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="forum">Forum</a>
+        </li>
+      </ul>
+      <span id="user">
+        <fa-icon
+          [icon]="faUserCircle"
+          transform="grow-10 right-6 top-4"
+        ></fa-icon>
+        <span id="user-name"></span>
+      </span>
+    </div>
+  </div>
+</nav>
